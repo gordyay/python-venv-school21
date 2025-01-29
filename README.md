@@ -14,17 +14,17 @@ Python and work with virtual environments.
 3. [Chapter III](#chapter-iii) \
     3.1. [Specific instructions for the day](#specific-instructions-for-the-day)
 4. [Chapter IV](#chapter-iv) \
-    4.1. [Exercise 00 : Virtual Environment](#exercise-00-virtual-environment)
+    4.1. [Exercise 00: Virtual Environment](#exercise-00-virtual-environment)
 5. [Chapter V](#chapter-v) \
-    5.1. [Exercise 01 : Installing a package](#exercise-01-installing-a-package)
+    5.1. [Exercise 01: Installing a package](#exercise-01-installing-a-package)
 6. [Chapter VI](#chapter-vi) \
-    6.1. [Exercise 02 : Installing many libraries](#exercise-02-installing-many-libraries)
+    6.1. [Exercise 02: Installing many libraries](#exercise-02-installing-many-libraries)
 7. [Chapter VII](#chapter-vii) \
-    7.1. [Exercise 03 : Very beautiful soup](#exercise-03-very-beautiful-soup)
+    7.1. [Exercise 03: Very beautiful soup](#exercise-03-very-beautiful-soup)
 8. [Chapter VIII](#chapter-viii) \
-    8.1. [Part 1](#exercise-04-profiling)
+    8.1. [Exercise 04: Profiling](#exercise-04-profiling)
 9. [Chapter IX](#chapter-ix) \
-    9.1. [Exercise 05 : PyTest](#exercise-05-pytest)
+    9.1. [Exercise 05: PyTest](#exercise-05-pytest)
     
    
 ## Chapter I
@@ -80,22 +80,21 @@ ified in the subject.
     ```
 * Any exception not caught will invalidate your work, even in the event of an error
 that you were asked you to test.
-* No imports are allowed, except those explicitly mentioned in the section “Autho-
-rized functions” of the title block of each exercise.
+* No imports are allowed, except those explicitly mentioned in the section “Allowed functions” of the title block of each exercise.
 
 ## Chapter IV
 
-### Exercise 00 : Virtual Environment
+### Exercise 00: Virtual Environment
 
 Exercise 00
 
 Virtual Environment
 
-Turn-in directory : ex00/
+Turn-in directory: ex00/
 
-Files to turn in : venv.py and the folder with your virtual env
+Files to turn in: venv.py and the folder with your virtual env
 
-Allowed functions : import os
+Allowed functions: import os
 
 Libraries, or in other words packages, are one of the means by which coding has been
 democratized. It has never been easier to learn to code and get quick results from this
@@ -132,21 +131,21 @@ will work with this env here and further on),
 * deactivate the environment,
 * run the script again ...
 
-If you got a KeyError or an exception when deactivated the env, consider why it happened.
+If you get a KeyError or None value or an exception while deactivating the env, consider why it happened.
 You do not have to fix it in this exercise, but be ready to explain why it happened.
 
 ## Chapter V
 
-### Exercise 01 : Installing a package
+### Exercise 01: Installing a package
 
 Installing a package
 
-Turn-in directory : ex01/
+Turn-in directory: ex01/
 
-Files to turn in : pies_bars.sh, the file with the data and the folder with
+Files to turn in: pies_bars.sh, the file with the data and the folder with
 your virtual env
 
-Allowed functions : no restrictions
+Allowed functions: no restrictions
 
 * Let us install the first package in your virtual environment!
 * We will work with the library termgraph a bit. It gives you the power to draw
@@ -162,17 +161,17 @@ only the part for making the graph without activation and deactivation of the en
 
 ## Chapter VI
 
-### Exercise 02 : Installing many libraries
+### Exercise 02: Installing many libraries
 
 Exercise 02
 
 Installing many libraries
 
-Turn-in directory : ex02/
+Turn-in directory: ex02/
 
-Files to turn in : librarian.py and the archive with your virtual env
+Files to turn in: librarian.py and the archive with your virtual env
 
-Allowed functions : no restrictions
+Allowed functions: no restrictions
 
 During the following exercises, you will work with several different libraries. In this
 exercise, you need to prepare your virtual environment for them.
@@ -202,17 +201,17 @@ be useful. If the script was called from the wrong env, there should be an excep
 
 ## Chapter VII
 
-### Exercise 03 : Very beautiful soup
+### Exercise 03: Very beautiful soup
 
 Exercise 03
 
 Very beautiful soup
 
-Turn-in directory : ex03/
+Turn-in directory: ex03/
 
-Files to turn in : financial.py
+Files to turn in: financial.py
 
-Allowed functions : no restrictions
+Allowed functions: no restrictions
 
 Ok, so you have installed 2 libraries in the previous exercise. Let us work with one
 of them BeautifulSoup. It is very useful when you need to parse a website that does not
@@ -247,18 +246,18 @@ raise an exception.
 
 ## Chapter VIII
 
-### Exercise 04 : Profiling
+### Exercise 04: Profiling
 
 Exercise 04
 
 Profiling
 
-Turn-in directory : ex04/
+Turn-in directory: ex04/
 
-Files to turn in : financial.py, financial_enhanced.py, profiling-sleep.txt, profiling-tottime.txt,
+Files to turn in: financial.py, financial_enhanced.py, profiling-sleep.txt, profiling-tottime.txt,
 profiling-http.txt, profiling-ncalls.txt
 
-Allowed functions : no restrictions
+Allowed functions: no restrictions
 
 There is no chance that you will write code 100% perfectly in the future without any
 scope for improvement. You will likely have to figure out why your scripts don’t work
@@ -291,17 +290,17 @@ pstats-cumulative.txt
 
 ## Chapter IX
 
-### Exercise 05 : PyTest
+### Exercise 05: PyTest
 
 Exercise 05
 
 PyTest
 
-Turn-in directory : ex05/
+Turn-in directory: ex05/
 
-Files to turn in : financial_test.py
+Files to turn in: financial_test.py
 
-Allowed functions : no restrictions
+Allowed functions: no restrictions
 
 Well, the speed of your script is not the only issue to consider. Your script may not
 work as you intended from the start. To be sure that the script works properly, you need
