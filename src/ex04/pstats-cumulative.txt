@@ -1,0 +1,15 @@
+Thu Feb 13 19:29:18 2025    profile_results
+
+         786412 function calls (762291 primitive calls) in 1.433 seconds
+
+   Ordered by: cumulative time
+   List reduced from 2135 to 5 due to restriction <5>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    300/1    0.007    0.000    1.433    1.433 {built-in method builtins.exec}
+        1    0.000    0.000    1.433    1.433 financial_enhanced.py:1(<module>)
+        1    0.000    0.000    1.242    1.242 financial_enhanced.py:44(finance)
+        1    0.000    0.000    1.242    1.242 financial_enhanced.py:8(get_fin_data)
+        1    0.000    0.000    1.039    1.039 /home/chumba/projects/DS_Bootcamp.Day03-1/src/ex03/test/lib/python3.12/site-packages/httpx/_api.py:174(get)
+
+

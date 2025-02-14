@@ -18,32 +18,28 @@ def get_fin_data(ticker, name_row):
     table = soup.find(
         'div', {'class': 'tableContainer yf-9ft13'})
     if not table:
-        raise Exception("Table not found")
+        if (soup.find('div', {'class': 'noData yf-wnifss'})):
+            raise Exception(f"Wrong Ticker {ticker}")
+        else:
+            raise Exception(f"Can't find the table")
 
-    table_container = soup.find('section', {'class': 'finContainer'})
-    if not table_container:
-        raise Exception("Таблица не найдена.")
-    # Получаем заголовки столбцов
-    columns = []
-    header_row = table_container.find('div', {'class': 'D(tbr)'})
-    if header_row:
-        column_headers = header_row.find_all('div', {'class': 'Ta(c)'})
-        for header in column_headers[1:]:  # Первый элемент - пустой
-            columns.append(header.get_text(strip=True))
-
-    # Ищем нужную строку
-    rows = table_container.find_all('div', {'data-test': 'fin-row'})
+    table_body = soup.find('section', {'class': 'finContainer'}).find('div', {'class': 'tableBody'})
+    if not table_body:
+        raise Exception("Something went wrong :Can't find the table")
+    rows = table_body.find_all('div', {'class': 'row'})
     for row in rows:
-        row_title = row.find('div', {'class': 'Va(m)'})
-        if row_title and row_title.get_text(strip=True).lower() == name_row.lower():
-            values = row.find_all('div', {'data-test': 'fin-col'})
-            formatted_values = [value.get_text(strip=True) for value in values]
-            return columns, formatted_values
-    # rows = table_body.find_all('div', {'class': 'row'})
-    # for row in rows:
-    #     children = row.find_all(recursive=False)
-    #     for child in children:
-    #         print(child)
+        children = row.find_all(recursive=False)
+        if children[0].text.strip().lower() == name_row.strip().lower():
+            result_list = [children[0].text.strip()]
+            for child in children[1:]:
+                result_list.append(child.text.strip())
+            time.sleep(5)
+            print(tuple(result_list))
+            break             
+    else:
+        raise Exception(f"Not such of row name: {name_row}")
+    
+                
 
 
 def finance():
