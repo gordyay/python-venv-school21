@@ -1,5 +1,5 @@
 import pytest
-from financial.py import get_fin_data
+from financial import get_fin_data
 
 
 def test_total_revenue():

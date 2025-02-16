@@ -34,8 +34,7 @@ def get_fin_data(ticker, name_row):
             result_list = [children[0].text.strip()]
             for child in children[1:]:
                 result_list.append(child.text.strip())
-            print(tuple(result_list))
-            break             
+            return(tuple(result_list))            
     else:
         raise Exception(f"Not such of row name: {name_row}")
     
@@ -49,7 +48,7 @@ def finance():
         ticker = sys.argv[1].upper()
         name_row = sys.argv[2]
         try:
-            result = get_fin_data(ticker, name_row)
+            print(get_fin_data(ticker, name_row))
         except Exception as e:
             print(f"Error: {e}")
 
